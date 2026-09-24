@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf2f4">
+  <meta name="description" content="Bagno Marè, Cesenatico. Una giornata al mare, una tavola da condividere, il piacere di fermarsi.">
+  <title>Bagno Marè | Cesenatico</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="site-header" id="inizio">
+    <a class="wordmark" href="#inizio" aria-label="Bagno Marè, inizio pagina">marè<span>·</span></a>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigazione principale">
+      <a href="#luogo">Il luogo</a>
+      <a href="#tavola">La tavola</a>
+      <a href="#galleria">Immagini</a>
+      <a href="#faq">Informazioni</a>
+      <a class="nav-booking" href="#prenota">Prenota <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-text-button" id="searchToggle" type="button" aria-expanded="false" aria-controls="siteSearch">Cerca</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Attiva tema scuro" aria-pressed="false"><span aria-hidden="true">◐</span></button>
+    </div>
+    <form class="site-search" id="siteSearch" role="search" hidden>
+      <label for="searchInput">Cerca nel sito</label>
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Es. prenotazioni, cucina…" autocomplete="off">
+        <button class="button button-dark" type="submit">Cerca</button>
+      </div>
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-image" src="/assets/MARE_180619_044-scaled-374x561.jpg" alt="Il passaggio tra gli ombrelloni verso il mare">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Cesenatico · Riviera Adriatica</p>
+        <h1 id="heroTitle">Il mare,<br>con il suo tempo.</h1>
+        <p class="hero-copy">Una giornata da vivere senza fretta.<br>Il resto lo fa il mare.</p>
+        <a class="button button-light" href="#prenota">Prenota un tavolo <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="hero-index" aria-hidden="true">44°12′ N &nbsp; 12°24′ E</span>
+      <a class="hero-scroll" href="#luogo"><span aria-hidden="true">↓</span> Scopri Marè</a>
+    </section>
+
+    <section class="intro section-pad" id="luogo">
+      <div class="intro-kicker">
+        <p class="eyebrow">Bagno Marè</p>
+        <p class="intro-number">01 / 04</p>
+      </div>
+      <div class="intro-copy">
+        <h2>Una pausa<br>vista mare.</h2>
+        <div class="intro-detail">
+          <p>Al Bagno Marè, a Cesenatico, la giornata prende il ritmo della spiaggia e si allunga volentieri fino a tavola.</p>
+          <a class="text-link" href="#galleria">Entra nell’atmosfera <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="place-section section-pad" aria-labelledby="placeTitle">
+      <div class="place-photo place-photo-main">
+        <img src="/assets/mare-spiaggia-stabilimento-674x600.jpg" alt="Le cabine del Bagno Marè sulla spiaggia">
+        <span class="photo-caption">La spiaggia, ogni giorno</span>
+      </div>
+      <div class="place-note">
+        <p class="eyebrow">Il luogo</p>
+        <h2 id="placeTitle">La luce cambia.<br>Il mare resta.</h2>
+        <p>Il legno chiaro, l’aria salmastra, la linea dell’orizzonte. Un luogo semplice da abitare, dalla prima luce fino a sera.</p>
+        <a class="text-link" href="#prenota">Organizza la tua visita <span aria-hidden="true">↗</span></a>
+        <div class="place-photo place-photo-small">
+          <img src="/assets/mare-sup-674x833.jpg" alt="Tavole SUP sulla spiaggia del Bagno Marè">
+        </div>
+      </div>
+    </section>
+
+    <section class="table-section" id="tavola" aria-labelledby="tableTitle">
+      <div class="table-copy section-pad">
+        <p class="eyebrow light">A tavola</p>
+        <h2 id="tableTitle">Il piacere<br>di fermarsi.</h2>
+        <p>Un pranzo con il mare davanti. Una cena che si prende il suo tempo. Scegli il momento, al resto pensiamo insieme.</p>
+        <a class="button button-light" href="#prenota">Scegli quando venire <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="table-image">
+        <img src="/assets/cucina-600x720.jpg" alt="Un piatto preparato nella cucina del Bagno Marè">
+      </div>
+    </section>
+
+    <section class="food-strip" aria-label="La cucina del Bagno Marè">
+      <figure><img src="/assets/275A0709-674x407.jpg" alt="Pasta fresca, pronta per essere servita"><figcaption>La cucina</figcaption></figure>
+      <figure><img src="/assets/croissant-674x407.jpg" alt="Un croissant preparato al Bagno Marè"><figcaption>Il mattino</figcaption></figure>
+      <figure><img src="/assets/SGA17_FOTO277-374x560.jpg" alt="Un piatto servito al ristorante"><figcaption>La tavola</figcaption></figure>
+    </section>
+
+    <section class="evening-section section-pad" aria-labelledby="eveningTitle">
+      <div class="evening-copy">
+        <p class="eyebrow">Quando scende il sole</p>
+        <h2 id="eveningTitle">La sera<br>ha un’altra luce.</h2>
+        <p>Una tavola apparecchiata, il rumore delle onde poco più in là. Marè si veste piano, senza perdere la sua naturalezza.</p>
+        <a class="text-link" href="#prenota">Prenota per cena <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="evening-photo"><img src="/assets/MARE_140721_285-600x720.jpg" alt="La sala del ristorante al tramonto, affacciata sul mare"></figure>
+      <figure class="evening-detail"><img src="/assets/IMG_1624-2-374x561.jpg" alt="Una tavola illuminata dalle candele"><figcaption>Una sera al Marè</figcaption></figure>
+    </section>
+
+    <section class="gallery-section section-pad" id="galleria" aria-labelledby="galleryTitle">
+      <div class="section-heading">
+        <div><p class="eyebrow">Appunti di Marè</p><h2 id="galleryTitle">Un luogo da ricordare.</h2></div>
+        <p>La spiaggia, la cucina, le occasioni da condividere.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-tall"><img src="/assets/IMG_1045-374x561.jpg" alt="Un calice versato al ristorante"><figcaption>Il brindisi</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/Foto_240-3-374x250.jpg" alt="Dettaglio degli interni del ristorante"><figcaption>Gli spazi</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/MG_5615-374x249.jpg" alt="La sala apparecchiata per la sera"><figcaption>La sera</figcaption></figure>
+        <figure class="gallery-item gallery-wide"><img src="/assets/Giulia-Masci-Wedding-13-2-374x560.jpg" alt="Una sala pronta per una cena speciale"><figcaption>Le occasioni speciali</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/IMG_1616-2-374x249.jpg" alt="Fiori e luci sulla tavola"><figcaption>La tavola</figcaption></figure>
+        <figure class="gallery-item"><img src="/assets/MARE_140721_087-374x561.jpg" alt="Un aperitivo al Bagno Marè"><figcaption>L’aperitivo</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="booking-section section-pad" id="prenota" aria-labelledby="bookingTitle">
+      <div class="booking-intro">
+        <p class="eyebrow light">La tua tavola</p>
+        <h2 id="bookingTitle">Ci vediamo<br>al Marè.</h2>
+        <p>Scegli pranzo o cena, poi la data e l’orario che preferisci. La disponibilità viene aggiornata in tempo reale.</p>
+        <div class="booking-aside"><span>01</span><p>La prenotazione viene registrata subito. Potrai aggiungere una nota se hai una richiesta per il tavolo.</p></div>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <fieldset class="service-select">
+          <legend>Quando vuoi venire?</legend>
+          <div class="service-options">
+            <label class="service-option"><input type="radio" name="service" value="pranzo" checked><span>Pranzo</span></label>
+            <label class="service-option"><input type="radio" name="service" value="cena"><span>Cena</span></label>
+          </div>
+        </fieldset>
+        <div class="form-grid">
+          <label class="field"><span>Giorno</span><input id="bookingDate" name="date" type="date" required></label>
+          <label class="field"><span>Persone</span><input id="bookingGuests" name="guests" type="number" min="1" max="500" step="1" value="2" required></label>
+        </div>
+        <fieldset class="time-select">
+          <legend>Orario</legend>
+          <div class="time-options" id="timeOptions" aria-live="polite"><p class="form-hint">Seleziona una data per vedere gli orari disponibili.</p></div>
+        </fieldset>
+        <label class="field field-notes"><span>Note <small>Facoltative</small></span><textarea id="bookingNotes" name="notes" rows="3" maxlength="500" placeholder="Una richiesta per il tavolo? Scrivila qui."></textarea><span class="character-count" id="characterCount">0 / 500</span></label>
+        <p class="form-message" id="bookingMessage" role="status" aria-live="polite"></p>
+        <button class="button button-light button-submit" id="bookingSubmit" type="submit" disabled>Prenota un tavolo <span aria-hidden="true">↗</span></button>
+        <p class="form-footnote">Non chiediamo dati personali per questa richiesta. Le disponibilità sono definite dallo stabilimento.</p>
+      </form>
+    </section>
+
+    <section class="faq-section section-pad" id="faq" aria-labelledby="faqTitle">
+      <div class="faq-intro"><p class="eyebrow">Da sapere</p><h2 id="faqTitle">Qualche risposta,<br>prima di venire.</h2></div>
+      <div class="faq-list">
+        <details><summary>Come posso prenotare?</summary><p>Scegli pranzo o cena, seleziona una data e un orario disponibile, indica il numero di persone e invia la richiesta. La conferma apparirà subito a schermo.</p></details>
+        <details><summary>Non vedo orari disponibili. Cosa significa?</summary><p>Gli orari e i coperti vengono configurati dallo stabilimento. Se non compare alcuna fascia, per quella data le prenotazioni online non sono attive.</p></details>
+        <details><summary>Posso aggiungere una nota?</summary><p>Sì. Puoi lasciare una richiesta o un’informazione utile nel campo note prima di inviare la prenotazione.</p></details>
+        <details><summary>Dove trovo il menù?</summary><p>Le informazioni sul menù saranno aggiunte quando saranno disponibili.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contatti" aria-labelledby="contactTitle">
+      <img src="/assets/IMG_1624-2-374x561.jpg" alt="La sala del ristorante illuminata la sera">
+      <div class="contact-shade"></div>
+      <div class="contact-copy"><p class="eyebrow light">Bagno Marè · Cesenatico</p><h2 id="contactTitle">La prossima<br>bella giornata<br>comincia qui.</h2><a class="button button-light" href="#prenota">Prenota la tua tavola <span aria-hidden="true">↗</span></a></div>
+      <p class="contact-location">Cesenatico<br>Emilia-Romagna, Italia</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#inizio">marè<span>·</span></a>
+    <p class="footer-location">Bagno Marè · Cesenatico</p>
+    <p class="footer-updated">Contenuti aggiornati al 24 settembre 2026</p>
+    <div class="footer-links"><a href="#prenota">Prenota</a><a href="#faq">Informazioni</a><a href="/admin.html">Area gestione</a></div>
+    <p class="footer-credit">© <span id="currentYear">2026</span> Bagno Marè</p>
+  </footer>
+
+  <a class="floating-contact" href="#contatti" aria-label="Vai ai contatti">Contatti <span aria-hidden="true">↗</span></a>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Torna all’inizio">↑</button>
+
+  <dialog class="confirmation-dialog" id="confirmationDialog" aria-labelledby="confirmationTitle">
+    <button class="dialog-close" id="closeConfirmation" type="button" aria-label="Chiudi">×</button>
+    <p class="eyebrow">Richiesta registrata</p>
+    <h2 id="confirmationTitle">A presto, al Marè.</h2>
+    <p id="confirmationSummary"></p>
+    <div class="reference-row"><span>Codice prenotazione</span><strong id="bookingReference"></strong><button id="copyReference" type="button" class="text-link">Copia</button></div>
+    <p class="confirmation-note">Conserva il codice per i tuoi appunti. La prenotazione è stata salvata.</p>
+    <div class="dialog-actions"><button class="button button-dark" id="printConfirmation" type="button">Stampa riepilogo</button><button class="button button-outline" id="finishConfirmation" type="button">Fatto</button></div>
+    <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
+  </dialog>
+</body>
+</html>
