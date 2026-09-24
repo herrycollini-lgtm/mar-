@@ -87,6 +87,10 @@ def initialize_db():
 def valid_date(value):
     if not isinstance(value, str) or not DATE_PATTERN.fullmatch(value):
         return False
+    try:
+        return datetime.strptime(value, "%Y-%m-%d").strftime("%Y-%m-%d") == value
+    except ValueError:
+        return False
 
 
 def local_now():
@@ -100,10 +104,6 @@ def slot_is_future(day, slot_time):
         return True
     slot_datetime = datetime.strptime(day + " " + slot_time, "%Y-%m-%d %H:%M").replace(tzinfo=ROME)
     return slot_datetime > local_now()
-    try:
-        return datetime.strptime(value, "%Y-%m-%d").strftime("%Y-%m-%d") == value
-    except ValueError:
-        return False
 
 
 def booked_seats(connection, day, service=None, slot_time=None):
